@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevOps Transformation - Byts of Everything</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .custom-button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    .custom-button:hover {
+      background-color: #45a049;
+    }
+
+    .schedule-meeting {
+      margin-top: 20px;
+      display: inline-block;
+      text-decoration: none;
+      background-color: #0073e6;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    .schedule-meeting:hover {
+      background-color: #005bb5;
+    }
+
+    textarea {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="header-space"></div>
+  <div class="header-space"></div>
+
+  <!-- DevOps Transformation Form Section -->
+  <section class="service-form">
+    <div class="container">
+      <br>        </br>
+      <br>        </br>
+      <form action="https://formspree.io/f/mvgjbnyp" method="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required><br>        </br>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required><br>        </br>
+
+        <label for="current-setup">Current Infrastructure Setup:</label>
+        <textarea id="current-setup" name="current-setup" rows="5" placeholder="Describe your current deployment process, hosting environment, and infrastructure (e.g., manual deployments, AWS, on-premise servers)" required></textarea><br>        </br>
+
+        <label for="pain-points">Main Pain Points (Check all that apply):</label>
+        <div style="margin: 10px 0;">
+          <input type="checkbox" id="manual" name="pain-points" value="manual">
+          <label for="manual">🔧 Manual deployment process</label><br>
+          <input type="checkbox" id="slow" name="pain-points" value="slow">
+          <label for="slow">🐌 Slow release cycles</label><br>
+          <input type="checkbox" id="downtime" name="pain-points" value="downtime">
+          <label for="downtime">⚠️ Frequent downtime</label><br>
+          <input type="checkbox" id="monitoring" name="pain-points" value="monitoring">
+          <label for="monitoring">📊 Lack of monitoring/alerts</label><br>
+          <input type="checkbox" id="scaling" name="pain-points" value="scaling">
+          <label for="scaling">📈 Scaling challenges</label><br>
+          <input type="checkbox" id="security" name="pain-points" value="security">
+          <label for="security">🔒 Security concerns</label><br>
+          <input type="checkbox" id="costs" name="pain-points" value="costs">
+          <label for="costs">💰 High infrastructure costs</label><br>
+          <input type="checkbox" id="testing" name="pain-points" value="testing">
+          <label for="testing">🧪 No automated testing in pipeline</label>
+        </div><br>        </br>
+
+        <label for="goals">DevOps Goals:</label>
+        <textarea id="goals" name="goals" rows="5" placeholder="What do you want to achieve? (e.g., faster deployments, better reliability, cost reduction, automated testing)" required></textarea><br>        </br>
+
+        <label for="cloud">Cloud Platform Preference:</label>
+        <select id="cloud" name="cloud" required>
+          <option value="">Select platform...</option>
+          <option value="aws">☁️ AWS (Amazon Web Services)</option>
+          <option value="azure">🔷 Microsoft Azure</option>
+          <option value="gcp">🌐 Google Cloud Platform</option>
+          <option value="digitalocean">💧 DigitalOcean</option>
+          <option value="current">📍 Keep current setup</option>
+          <option value="unsure">🤔 Need recommendation</option>
+        </select><br>        </br>
+
+        <label for="team-size">Development Team Size:</label>
+        <select id="team-size" name="team-size" required>
+          <option value="">Select size...</option>
+          <option value="solo">👤 Solo developer</option>
+          <option value="small">👥 2-5 developers</option>
+          <option value="medium">👨‍👩‍👧‍👦 6-15 developers</option>
+          <option value="large">🏢 16+ developers</option>
+        </select><br>        </br>
+
+        <label for="timeline">Desired Implementation Timeline:</label>
+        <select id="timeline" name="timeline" required>
+          <option value="">Select timeline...</option>
+          <option value="urgent">🚨 Urgent (2-4 weeks)</option>
+          <option value="standard">📅 Standard (4-8 weeks)</option>
+          <option value="comprehensive">🎯 Comprehensive (8-12 weeks)</option>
+          <option value="phased">📊 Phased approach (3-6 months)</option>
+        </select><br>        </br>
+
+        <button type="submit" class="custom-button">Start DevOps Journey</button>
+      </form>
+
+      <a href="https://calendly.com/moussamb1901/30min" class="schedule-meeting" target="_blank">Schedule Infrastructure Audit</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+   <br>        </br><br>        </br>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Byts of Everything. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

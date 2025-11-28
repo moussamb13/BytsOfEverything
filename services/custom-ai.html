@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Integration Wizard - Byts of Everything</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .custom-button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    .custom-button:hover {
+      background-color: #45a049;
+    }
+
+    .schedule-meeting {
+      margin-top: 20px;
+      display: inline-block;
+      text-decoration: none;
+      background-color: #0073e6;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    .schedule-meeting:hover {
+      background-color: #005bb5;
+    }
+
+    textarea {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="header-space"></div>
+  <div class="header-space"></div>
+
+  <!-- AI Integration Wizard Form Section -->
+  <section class="service-form">
+    <div class="container">
+      <br>        </br>
+      <br>        </br>
+      <form action="https://formspree.io/f/mvgjbnyp" method="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required><br>        </br>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required><br>        </br>
+
+        <label for="current-app">Current Application/Product:</label>
+        <textarea id="current-app" name="current-app" rows="4" placeholder="Describe your existing application or product that needs AI superpowers" required></textarea><br>        </br>
+
+        <label for="ai-features">Desired AI Features (Check all that apply):</label>
+        <div style="margin: 10px 0;">
+          <input type="checkbox" id="chatbot" name="ai-features" value="chatbot">
+          <label for="chatbot">🤖 AI Chatbot / Virtual Assistant</label><br>
+          <input type="checkbox" id="nlp" name="ai-features" value="nlp">
+          <label for="nlp">💬 Natural Language Processing</label><br>
+          <input type="checkbox" id="image" name="ai-features" value="image">
+          <label for="image">🖼️ Image Recognition / Computer Vision</label><br>
+          <input type="checkbox" id="prediction" name="ai-features" value="prediction">
+          <label for="prediction">📊 Predictive Analytics</label><br>
+          <input type="checkbox" id="recommendation" name="ai-features" value="recommendation">
+          <label for="recommendation">🎯 Recommendation Engine</label><br>
+          <input type="checkbox" id="automation" name="ai-features" value="automation">
+          <label for="automation">⚡ Intelligent Automation</label><br>
+          <input type="checkbox" id="sentiment" name="ai-features" value="sentiment">
+          <label for="sentiment">😊 Sentiment Analysis</label><br>
+          <input type="checkbox" id="custom" name="ai-features" value="custom">
+          <label for="custom">✨ Custom AI Solution</label>
+        </div><br>        </br>
+
+        <label for="use-case">AI Use Case Description:</label>
+        <textarea id="use-case" name="use-case" rows="6" placeholder="Describe how you want to use AI in your application. What problems should it solve? What value will it add for your users?" required></textarea><br>        </br>
+
+        <label for="data">Do you have training data?</label>
+        <select id="data" name="data" required>
+          <option value="">Select option...</option>
+          <option value="yes-large">✅ Yes, large dataset available</option>
+          <option value="yes-small">📊 Yes, small dataset available</option>
+          <option value="no-help">❓ No, need help collecting data</option>
+          <option value="unsure">🤔 Not sure what's needed</option>
+        </select><br>        </br>
+
+        <label for="deadline">Target Launch Date:</label>
+        <input type="date" id="deadline" name="deadline"><br>        </br>
+
+        <button type="submit" class="custom-button">Add AI Magic ✨</button>
+      </form>
+
+      <a href="https://calendly.com/moussamb1901/30min" class="schedule-meeting" target="_blank">Schedule AI Discovery Call</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+   <br>        </br><br>        </br>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Byts of Everything. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

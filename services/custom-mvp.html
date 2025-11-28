@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MVP Launch Pad - Byts of Everything</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .custom-button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    .custom-button:hover {
+      background-color: #45a049;
+    }
+
+    .schedule-meeting {
+      margin-top: 20px;
+      display: inline-block;
+      text-decoration: none;
+      background-color: #0073e6;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    .schedule-meeting:hover {
+      background-color: #005bb5;
+    }
+
+    textarea {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="header-space"></div>
+  <div class="header-space"></div>
+
+  <!-- MVP Launch Pad Form Section -->
+  <section class="service-form">
+    <div class="container">
+      <br>        </br>
+      <br>        </br>
+      <form action="https://formspree.io/f/mvgjbnyp" method="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required><br>        </br>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required><br>        </br>
+
+        <label for="idea">Your Big Idea:</label>
+        <textarea id="idea" name="idea" rows="5" placeholder="Tell us about your vision! What problem does your MVP solve? Who are your target users?" required></textarea><br>        </br>
+
+        <label for="features">Core Features (Top 3-5):</label>
+        <textarea id="features" name="features" rows="5" placeholder="List the must-have features for your MVP. Remember: simple and focused wins the race!" required></textarea><br>        </br>
+
+        <label for="platform">Preferred Platform:</label>
+        <select id="platform" name="platform" required>
+          <option value="">Select platform...</option>
+          <option value="web">🌐 Web Application</option>
+          <option value="mobile">📱 Mobile App (iOS/Android)</option>
+          <option value="both">🚀 Both Web & Mobile</option>
+          <option value="other">💡 Other (explain in description)</option>
+        </select><br>        </br>
+
+        <label for="timeline">Desired Launch Timeline:</label>
+        <select id="timeline" name="timeline" required>
+          <option value="">Select timeline...</option>
+          <option value="4weeks">⚡ 4 weeks - Lightning Fast</option>
+          <option value="6weeks">🏃 6 weeks - Quick Launch</option>
+          <option value="8weeks">📅 8 weeks - Balanced Approach</option>
+          <option value="custom">🎯 Custom Timeline</option>
+        </select><br>        </br>
+
+        <label for="budget">Estimated Budget Range:</label>
+        <select id="budget" name="budget" required>
+          <option value="">Select budget...</option>
+          <option value="3500-5000">$3,500 - $5,000</option>
+          <option value="5000-8000">$5,000 - $8,000</option>
+          <option value="8000-12000">$8,000 - $12,000</option>
+          <option value="12000+">$12,000+</option>
+        </select><br>        </br>
+
+        <button type="submit" class="custom-button">Launch My MVP Journey</button>
+      </form>
+
+      <a href="https://calendly.com/moussamb1901/30min" class="schedule-meeting" target="_blank">Book Strategy Session</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+   <br>        </br><br>        </br>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Byts of Everything. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
